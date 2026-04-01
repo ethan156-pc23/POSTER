@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Roboto", sans-serif;
+    background: radial-gradient(circle at top left, #fde8f3 0%, #ffc2dd 40%, #5574b8 100%);
+    color: #241b38;
+}
+
+.roboto-400 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.poster {
+    width: min(100%, 900px);
+    padding: 3rem 2rem;
+    background: rgba(255,255,255,0.92);
+    border-radius: 2rem;
+    border: 1px solid rgba(82, 60, 144, 0.2);
+    box-shadow: 0 24px 60px rgba(59, 37, 117, 0.18);
+    text-align: center;
+    backdrop-filter: blur(14px);
+}
+
+.Title {
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    color: #3d2f71;
+    text-shadow: 0 0 25px rgba(61,47,113,0.15);
+}
+
+.quote {
+    font-size: clamp(1.1rem, 2vw, 1.8rem);
+    line-height: 1.7;
+    margin: 1.8rem auto;
+    max-width: 44rem;
+    position: relative;
+    color: #3e305f;
+}
+
+.quote::before {
+    position: absolute;
+    left: -1.2rem;
+    top: -1rem;
+    font-size: 3.5rem;
+    color: #d75c9f;
+}
+
+.quote::after {
+    position: absolute;
+    right: -1.2rem;
+    bottom: -0.75rem;
+    font-size: 3.5rem;
+    color: #d75c9f;
+}
+
+.author {
+    margin-top: 2rem;
+    font-size: 1.05rem;
+    color: #5b4b7a;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+
